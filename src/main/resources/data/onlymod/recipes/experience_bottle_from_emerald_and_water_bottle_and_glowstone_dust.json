@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    "#2",
+    "21"
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:emerald"
+    },
+    "1": {
+      "item": "minecraft:potion"
+    },
+    "2": {
+      "item": "minecraft:glowstone_dust"
+    }
+  },
+  "result": {
+    "item": "minecraft:blackstone",
+    "count": "4"
+  }
+}

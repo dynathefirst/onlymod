@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cookingtime": 15,
+  "experience": 0.1,
+  "ingredient": {
+    "item": "minecraft:brown_mushroom"
+  },
+  "result": "minecraft:brown_dye"
+}

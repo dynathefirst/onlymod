@@ -1,0 +1,21 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "category": "building",
+    "pattern": [
+        "1#1",
+        "# #",
+        "1#1"
+    ],
+    "key": {
+        "#": {
+            "item": "minecraft:sand"
+        }
+        "1": {
+            "item": "minecraft:string"
+        }
+    },
+    "result": {
+        "item": "minecraft:sponge",
+        "count": 4
+    }
+}
