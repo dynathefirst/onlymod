@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "#": {
+      "item": "minecraft:oak_planks"
+    },
+    "1": {
+      "item": "minecraft:pink_dye"
+    }
+  },
+  "pattern": [
+    "###",
+    "#1#",
+    "###"
+  ],
+  "result": {
+    "count": 8,
+    "item": "onlymod:pink_dyed_oak_planks"
+  },
+  "show_notification": true
+}

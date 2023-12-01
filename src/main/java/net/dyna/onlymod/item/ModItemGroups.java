@@ -18,16 +18,18 @@ public class ModItemGroups {
 
                         entries.add(ModItems.RUBY);
                         entries.add(ModItems.TOPAZ);
-
                         entries.add(ModItems.COPPER_NUGGET);
-
                         entries.add(ModBlocks.DIRT_SLAB);
-
                         entries.add(ModItems.PINEAPPLE);
-
                         entries.add(ModItems.STONE_CHUNK);
-
                         entries.add(ModItems.CAVE_DETECTOR);
+                        entries.add(ModItems.LUCKY_CLOVER);
+
+                        entries.add(ModBlocks.PINK_DYED_OAK_PLANKS);
+                        entries.add(ModBlocks.PURPLE_DYED_OAK_PLANKS);
+                        entries.add(ModBlocks.LIME_DYED_OAK_PLANKS);
+                        entries.add(ModBlocks.BLUE_DYED_OAK_PLANKS);
+                        entries.add(ModBlocks.GRAY_DYED_OAK_PLANKS);
                     }).build());
 
 

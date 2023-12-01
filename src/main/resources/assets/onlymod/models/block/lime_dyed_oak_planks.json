@@ -1,0 +1,6 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "onlymod:block/lime_dyed_oak_planks"
+  }
+}

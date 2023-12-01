@@ -51,6 +51,6 @@ public class CaveDetectorItem extends Item {
     }
 
     private boolean isCaveBlock(BlockState state) {
-        return state.isOf(Blocks.CAVE_AIR);
+        return state.isOf(Blocks.CAVE_AIR) || state.isOf(Blocks.AIR);
     }
 }

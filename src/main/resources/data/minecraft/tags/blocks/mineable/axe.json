@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "onlymod:pink_dyed_oak_planks",
+    "onlymod:purple_dyed_oak_planks",
+    "onlymod:lime_dyed_oak_planks",
+    "onlymod:blue_dyed_oak_planks",
+    "onlymod:gray_dyed_oak_planks"
+  ]
+}

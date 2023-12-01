@@ -6,5 +6,16 @@
   "item.onlymod.pineapple": "Pineapple",
   "item.onlymod.stone_chunk": "Stone Chunk",
   "block.onlymod.dirt_slab": "Dirt Slab",
-  "item.onlymod.cave_detector": "Cave Detector"
+  "item.onlymod.cave_detector": "Cave Detector",
+  "enchantment.onlymod.petrification": "Petrification",
+  "item.onlymod.lucky_clover": "Lucky Clover",
+  "item.minecraft.wheat_seeds": "Wheat Seeds",
+  "item.onlymod.lightning_rod": "Lightning Rod",
+
+  "block.minecraft.oak_planks": "Undyed Oak Planks",
+  "block.onlymod.pink_dyed_oak_planks": "Pink Dyed Oak Planks",
+  "block.onlymod.purple_dyed_oak_planks": "Purple Dyed Oak Planks",
+  "block.onlymod.lime_dyed_oak_planks": "Lime Dyed Oak Planks",
+  "block.onlymod.blue_dyed_oak_planks": "Blue Dyed Oak Planks",
+  "block.onlymod.gray_dyed_oak_planks": "Gray Dyed Oak Planks"
 }
