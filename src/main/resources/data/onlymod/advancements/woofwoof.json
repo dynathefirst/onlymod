@@ -1,0 +1,26 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:jukebox"
+    },
+    "title": {
+      "translate": "advancements.woofwoof.title"
+    },
+    "description": {
+      "translate": "advancements.woofwoof.desc"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "woofwoof": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "experience": 1
+  },
+  "parent": "minecraft:story/root"
+}

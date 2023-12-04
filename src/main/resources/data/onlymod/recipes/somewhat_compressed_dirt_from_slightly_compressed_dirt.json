@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "onlymod:slightly_compressed_dirt"
+    }
+  },
+  "result": {
+    "item": "onlymod:somewhat_compressed_dirt",
+    "count": 1
+  }
+}

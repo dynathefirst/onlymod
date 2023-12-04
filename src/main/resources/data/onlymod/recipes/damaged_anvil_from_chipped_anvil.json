@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    {
+      "item": "minecraft:chipped_anvil"
+    }
+  ],
+  "result": {
+    "item": "minecraft:damaged_anvil",
+    "count": 1
+  }
+}

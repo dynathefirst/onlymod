@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "010",
+    "0 0"
+  ],
+  "key": {
+    "0": {
+      "item": "minecraft:phantom_membrane"
+    },
+    "1": {
+      "item": "minecraft:diamond"
+    }
+  },
+  "result": {
+    "item": "minecraft:elytra",
+    "count": 1
+  }
+}

@@ -10,12 +10,42 @@
   "enchantment.onlymod.petrification": "Petrification",
   "item.onlymod.lucky_clover": "Lucky Clover",
   "item.minecraft.wheat_seeds": "Wheat Seeds",
-  "item.onlymod.lightning_rod": "Lightning Rod",
+  "item.onlymod.creeper_essence": "Creeper Essence",
 
   "block.minecraft.oak_planks": "Undyed Oak Planks",
   "block.onlymod.pink_dyed_oak_planks": "Pink Dyed Oak Planks",
   "block.onlymod.purple_dyed_oak_planks": "Purple Dyed Oak Planks",
   "block.onlymod.lime_dyed_oak_planks": "Lime Dyed Oak Planks",
   "block.onlymod.blue_dyed_oak_planks": "Blue Dyed Oak Planks",
-  "block.onlymod.gray_dyed_oak_planks": "Gray Dyed Oak Planks"
+  "block.onlymod.gray_dyed_oak_planks": "Gray Dyed Oak Planks",
+
+  "block.onlymod.barely_compressed_dirt": "Barely Compressed Dirt",
+  "block.onlymod.slightly_compressed_dirt": "Slightly Compressed Dirt",
+  "block.onlymod.somewhat_compressed_dirt": "Somewhat Compressed Dirt",
+  "block.onlymod.barely_compressed_sand": "Barely Compressed Sand",
+  "block.onlymod.slightly_compressed_sand": "Slightly Compressed Sand",
+  "block.onlymod.somewhat_compressed_sand": "Somewhat Compressed Sand",
+  "block.onlymod.barely_compressed_diorite": "Barely Compressed Diorite",
+  "block.onlymod.slightly_compressed_diorite": "Slightly Compressed Diorite",
+  "block.onlymod.somewhat_compressed_diorite": "Somewhat Compressed Diorite",
+  "block.onlymod.barely_compressed_cobblestone": "Barely Compressed Cobblestone",
+  "block.onlymod.slightly_compressed_cobblestone": "Slightly Compressed Cobblestone",
+  "block.onlymod.somewhat_compressed_cobblestone": "Somewhat Compressed Cobblestone",
+  "block.onlymod.barely_compressed_gravel": "Barely Compressed Gravel",
+  "block.onlymod.slightly_compressed_gravel": "Slightly Compressed Gravel",
+  "block.onlymod.somewhat_compressed_gravel": "Somewhat Compressed Gravel",
+  "block.onlymod.barely_compressed_stone": "Barely Compressed Stone",
+  "block.onlymod.slightly_compressed_stone": "Slightly Compressed Stone",
+  "block.onlymod.somewhat_compressed_stone": "Somewhat Compressed Stone",
+  "block.onlymod.barely_compressed_andesite": "Barely Compressed Andesite",
+  "block.onlymod.slightly_compressed_andesite": "Slightly Compressed Andesite",
+  "block.onlymod.somewhat_compressed_andesite": "Somewhat Compressed Andesite",
+
+  "item.onlymod.dog": "Music Disc",
+  "item.onlymod.dog.desc": "C418 - Dog",
+
+  "advancements.woofwoof.title": "Woof Woof!",
+  "advancements.woofwoof.desc": "Obtain Music Disc 'Dog'.",
+
+  "subtitles.disc_dog": "Music Disc Plays"
 }

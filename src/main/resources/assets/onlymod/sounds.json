@@ -1,0 +1,12 @@
+{
+  "dog": {
+    "sounds": [
+      {
+        "name": "onlymod:dog",
+        "category": "record",
+        "subtitle": "subtitles.disc_dog",
+        "stream": true
+      }
+    ]
+  }
+}

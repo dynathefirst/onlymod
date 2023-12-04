@@ -1,0 +1,6 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "onlymod:block/slightly_compressed_dirt"
+  }
+}

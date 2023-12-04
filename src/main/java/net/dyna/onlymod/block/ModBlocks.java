@@ -22,6 +22,19 @@ public class ModBlocks {
     public static final Block BLUE_DYED_OAK_PLANKS = registerBlock("blue_dyed_oak_planks", new Block(FabricBlockSettings.copyOf(Blocks.OAK_PLANKS)));
     public static final Block GRAY_DYED_OAK_PLANKS = registerBlock("gray_dyed_oak_planks", new Block(FabricBlockSettings.copyOf(Blocks.OAK_PLANKS)));
 
+    public static final Block BARELY_COMPRESSED_DIRT = registerBlock("barely_compressed_dirt", new Block(FabricBlockSettings.copyOf(Blocks.DIRT)));
+    public static final Block SLIGHTLY_COMPRESSED_DIRT = registerBlock("slightly_compressed_dirt", new Block(FabricBlockSettings.copyOf(Blocks.DIRT)));
+    public static final Block SOMEWHAT_COMPRESSED_DIRT = registerBlock("somewhat_compressed_dirt", new Block(FabricBlockSettings.copyOf(Blocks.DIRT)));
+    public static final Block BARELY_COMPRESSED_SAND = registerBlock("barely_compressed_sand", new Block(FabricBlockSettings.copyOf(Blocks.DIRT)));
+    public static final Block SLIGHTLY_COMPRESSED_SAND = registerBlock("slightly_compressed_sand", new Block(FabricBlockSettings.copyOf(Blocks.DIRT)));
+    public static final Block SOMEWHAT_COMPRESSED_SAND = registerBlock("somewhat_compressed_sand", new Block(FabricBlockSettings.copyOf(Blocks.DIRT)));
+    public static final Block BARELY_COMPRESSED_DIORITE = registerBlock("barely_compressed_diorite", new Block(FabricBlockSettings.copyOf(Blocks.DIRT)));
+    public static final Block SLIGHTLY_COMPRESSED_DIORITE = registerBlock("slightly_compressed_diorite", new Block(FabricBlockSettings.copyOf(Blocks.DIRT)));
+    public static final Block SOMEWHAT_COMPRESSED_DIORITE = registerBlock("somewhat_compressed_diorite", new Block(FabricBlockSettings.copyOf(Blocks.DIRT)));
+    public static final Block BARELY_COMPRESSED_COBBLESTONE = registerBlock("barely_compressed_cobblestone", new Block(FabricBlockSettings.copyOf(Blocks.DIRT)));
+    public static final Block SLIGHTLY_COMPRESSED_COBBLESTONE = registerBlock("slightly_compressed_cobblestone", new Block(FabricBlockSettings.copyOf(Blocks.DIRT)));
+    public static final Block SOMEWHAT_COMPRESSED_COBBLESTONE = registerBlock("somewhat_compressed_cobblestone", new Block(FabricBlockSettings.copyOf(Blocks.DIRT)));
+
     private static Block registerBlock(String name, Block block) {
         registerBlockItem(name, block);
         return Registry.register(Registries.BLOCK, new Identifier(TheOnlyModYouWillEverNeed.MOD_ID, name), block);
