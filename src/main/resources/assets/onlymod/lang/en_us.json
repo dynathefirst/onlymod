@@ -11,14 +11,12 @@
   "item.onlymod.lucky_clover": "Lucky Clover",
   "item.minecraft.wheat_seeds": "Wheat Seeds",
   "item.onlymod.creeper_essence": "Creeper Essence",
-
   "block.minecraft.oak_planks": "Undyed Oak Planks",
   "block.onlymod.pink_dyed_oak_planks": "Pink Dyed Oak Planks",
   "block.onlymod.purple_dyed_oak_planks": "Purple Dyed Oak Planks",
   "block.onlymod.lime_dyed_oak_planks": "Lime Dyed Oak Planks",
   "block.onlymod.blue_dyed_oak_planks": "Blue Dyed Oak Planks",
   "block.onlymod.gray_dyed_oak_planks": "Gray Dyed Oak Planks",
-
   "block.onlymod.barely_compressed_dirt": "Barely Compressed Dirt",
   "block.onlymod.slightly_compressed_dirt": "Slightly Compressed Dirt",
   "block.onlymod.somewhat_compressed_dirt": "Somewhat Compressed Dirt",
@@ -40,12 +38,12 @@
   "block.onlymod.barely_compressed_andesite": "Barely Compressed Andesite",
   "block.onlymod.slightly_compressed_andesite": "Slightly Compressed Andesite",
   "block.onlymod.somewhat_compressed_andesite": "Somewhat Compressed Andesite",
-
   "item.onlymod.dog": "Music Disc",
   "item.onlymod.dog.desc": "C418 - Dog",
-
   "advancements.woofwoof.title": "Woof Woof!",
   "advancements.woofwoof.desc": "Obtain Music Disc 'Dog'.",
-
-  "subtitles.disc_dog": "Music Disc Plays"
+  "subtitles.disc_dog": "Music Disc Plays",
+  "tooltip.onlymod.cave_detector.tooltip": "Finds caves underground",
+  "tooltip.onlymod.lucky_clover.tooltip": "Gives the user luck when used",
+  "item.onlymod.pepper": "Pepper"
 }

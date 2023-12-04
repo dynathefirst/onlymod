@@ -4,6 +4,7 @@ import net.dyna.onlymod.block.ModBlocks;
 import net.dyna.onlymod.enchantment.PetrificationEnchantment;
 import net.dyna.onlymod.item.ModItemGroups;
 import net.dyna.onlymod.item.ModItems;
+import net.dyna.onlymod.sound.ModSounds;
 import net.fabricmc.api.ModInitializer;
 
 import net.minecraft.enchantment.Enchantment;
@@ -24,6 +25,7 @@ public class TheOnlyModYouWillEverNeed implements ModInitializer {
 		ModItemGroups.registerItemGroups();
 		ModItems.registerModItems();
 		ModBlocks.registerModBlocks();
+		ModSounds.registerSounds();
 
 		Registry.register(Registries.ENCHANTMENT, new Identifier("onlymod", "petrification"), PETRIFICATION);
 	}

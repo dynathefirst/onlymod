@@ -3,13 +3,19 @@ package net.dyna.onlymod.item.custom;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Blocks;
+import net.minecraft.client.item.TooltipContext;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.Item;
+import net.minecraft.item.ItemStack;
 import net.minecraft.item.ItemUsageContext;
 import net.minecraft.recipe.RepairItemRecipe;
 import net.minecraft.text.Text;
 import net.minecraft.util.ActionResult;
 import net.minecraft.util.math.BlockPos;
+import net.minecraft.world.World;
+import org.jetbrains.annotations.Nullable;
+
+import java.util.List;
 
 public class CaveDetectorItem extends Item {
     public CaveDetectorItem(Settings settings) {
@@ -43,6 +49,12 @@ public class CaveDetectorItem extends Item {
                 playerEntity -> playerEntity.sendToolBreakStatus(playerEntity.getActiveHand()));
 
         return ActionResult.SUCCESS;
+    }
+
+    @Override
+    public void appendTooltip(ItemStack stack, @Nullable World world, List<Text> tooltip, TooltipContext context) {
+        tooltip.add(Text.translatable("tooltip.onlymod.cave_detector.tooltip"));
+        super.appendTooltip(stack, world, tooltip, context);
     }
 
     private void outputCaveCoordinates(BlockPos blockPos, PlayerEntity player, Block block) {

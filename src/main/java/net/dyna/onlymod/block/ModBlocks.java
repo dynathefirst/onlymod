@@ -1,5 +1,6 @@
 package net.dyna.onlymod.block;
 
+import net.dyna.onlymod.block.custom.PepperCropBlock;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.dyna.onlymod.TheOnlyModYouWillEverNeed;
@@ -34,6 +35,7 @@ public class ModBlocks {
     public static final Block BARELY_COMPRESSED_COBBLESTONE = registerBlock("barely_compressed_cobblestone", new Block(FabricBlockSettings.copyOf(Blocks.DIRT)));
     public static final Block SLIGHTLY_COMPRESSED_COBBLESTONE = registerBlock("slightly_compressed_cobblestone", new Block(FabricBlockSettings.copyOf(Blocks.DIRT)));
     public static final Block SOMEWHAT_COMPRESSED_COBBLESTONE = registerBlock("somewhat_compressed_cobblestone", new Block(FabricBlockSettings.copyOf(Blocks.DIRT)));
+    public static final Block PEPPER_CROP = Registry.register(Registries.BLOCK, new Identifier(TheOnlyModYouWillEverNeed.MOD_ID, "pepper_crop"), new PepperCropBlock(FabricBlockSettings.copyOf(Blocks.WHEAT)));
 
     private static Block registerBlock(String name, Block block) {
         registerBlockItem(name, block);

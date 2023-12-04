@@ -25,13 +25,11 @@ public class ModItemGroups {
                         entries.add(ModItems.CAVE_DETECTOR);
                         entries.add(ModItems.LUCKY_CLOVER);
                         entries.add(ModItems.CREEPER_ESSENCE);
-
                         entries.add(ModBlocks.PINK_DYED_OAK_PLANKS);
                         entries.add(ModBlocks.PURPLE_DYED_OAK_PLANKS);
                         entries.add(ModBlocks.LIME_DYED_OAK_PLANKS);
                         entries.add(ModBlocks.BLUE_DYED_OAK_PLANKS);
                         entries.add(ModBlocks.GRAY_DYED_OAK_PLANKS);
-
                         entries.add(ModBlocks.BARELY_COMPRESSED_DIRT);
                         entries.add(ModBlocks.SLIGHTLY_COMPRESSED_DIRT);
                         entries.add(ModBlocks.SOMEWHAT_COMPRESSED_DIRT);
@@ -44,8 +42,8 @@ public class ModItemGroups {
                         entries.add(ModBlocks.BARELY_COMPRESSED_COBBLESTONE);
                         entries.add(ModBlocks.SLIGHTLY_COMPRESSED_COBBLESTONE);
                         entries.add(ModBlocks.SOMEWHAT_COMPRESSED_COBBLESTONE);
-
                         entries.add(ModItems.DOG);
+                        entries.add(ModItems.PEPPER);
                     }).build());
 
 

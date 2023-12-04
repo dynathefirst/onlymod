@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/crop",
+  "textures": {
+    "crop": "onlymod:block/pepper_crop_stage3"
+  }
+}
