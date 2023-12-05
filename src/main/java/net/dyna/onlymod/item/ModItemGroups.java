@@ -42,12 +42,30 @@ public class ModItemGroups {
                         entries.add(ModBlocks.BARELY_COMPRESSED_COBBLESTONE);
                         entries.add(ModBlocks.SLIGHTLY_COMPRESSED_COBBLESTONE);
                         entries.add(ModBlocks.SOMEWHAT_COMPRESSED_COBBLESTONE);
+                        entries.add(ModBlocks.BARELY_COMPRESSED_ANDESITE);
+                        entries.add(ModBlocks.SLIGHTLY_COMPRESSED_ANDESITE);
+                        entries.add(ModBlocks.SOMEWHAT_COMPRESSED_ANDESITE);
                         entries.add(ModItems.DOG);
                         entries.add(ModItems.PEPPER);
+                        entries.add(ModItems.CHEESE);
+                        entries.add(ModBlocks.CHEESE_BLOCK);
+                        entries.add(ModBlocks.CUT_OBSIDIAN);
+                        entries.add(ModBlocks.BLUE_SLIME_BLOCK);
+                        entries.add(ModBlocks.RED_SLIME_BLOCK);
+                        entries.add(ModBlocks.PURPLE_SLIME_BLOCK);
+                        entries.add(ModBlocks.YELLOW_SLIME_BLOCK);
+                        entries.add(ModBlocks.BAOBAB_LOG);
+                        entries.add(ModBlocks.BAOBAB_WOOD);
+                        entries.add(ModBlocks.STRIPPED_BAOBAB_LOG);
+                        entries.add(ModBlocks.STRIPPED_BAOBAB_WOOD);
+                        entries.add(ModBlocks.BAOBAB_PLANKS);
+                        entries.add(ModBlocks.BAOBAB_LEAVES);
+                        entries.add(ModBlocks.BAOBAB_SAPLING);
+                        entries.add(ModBlocks.RUBBLE);
                     }).build());
 
 
     public static void registerItemGroups() {
-        TheOnlyModYouWillEverNeed.LOGGER.info("Registering Item Groups for " +TheOnlyModYouWillEverNeed.MOD_ID);
+        TheOnlyModYouWillEverNeed.LOGGER.info("Registering Item Groups for " + TheOnlyModYouWillEverNeed.MOD_ID);
     }
 }

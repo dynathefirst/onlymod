@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cross",
+  "textures": {
+    "cross": "onlymod:block/baobab_sapling"
+  }
+}

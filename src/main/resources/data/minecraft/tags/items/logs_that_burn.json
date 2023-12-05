@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "onlymod:baobab_log",
+    "onlymod:baobab_wood",
+    "onlymod:stripped_baobab_log",
+    "onlymod:stripped_baobab_wood"
+  ]
+}

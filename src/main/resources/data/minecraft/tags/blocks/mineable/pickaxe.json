@@ -1,0 +1,12 @@
+{
+  "replace": false,
+  "values": [
+    "onlymod:cut_obsidian",
+    "onlymod:barely_compressed_diorite",
+    "onlymod:slightly_compressed_diorite",
+    "onlymod:somewhat_compressed_diorite",
+    "onlymod:barely_compressed_cobblestone",
+    "onlymod:slightly_compressed_cobblestone",
+    "onlymod:somewhat_compressed_cobblestone"
+  ]
+}

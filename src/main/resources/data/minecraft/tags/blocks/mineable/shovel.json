@@ -1,6 +1,12 @@
 {
   "replace": false,
   "values": [
-    "onlymod:dirt_slab"
+    "onlymod:dirt_slab",
+    "onlymod:barely_compressed_dirt",
+    "onlymod:slightly_compressed_dirt",
+    "onlymod:somewhat_compressed_dirt",
+    "onlymod:barely_compressed_sand",
+    "onlymod:slightly_compressed_sand",
+    "onlymod:somewhat_compressed_sand"
   ]
 }

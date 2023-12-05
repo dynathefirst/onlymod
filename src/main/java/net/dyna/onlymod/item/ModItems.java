@@ -24,6 +24,7 @@ public class ModItems {
     public static final Item CREEPER_ESSENCE = registerItem("creeper_essence", new Item(new FabricItemSettings()));
     public static final Item DOG = registerItem("dog", new MusicDiscItem(7, ModSounds.DOG, new FabricItemSettings().maxCount(1), 140));
     public static final Item PEPPER = registerItem("pepper", new AliasedBlockItem(ModBlocks.PEPPER_CROP, new FabricItemSettings().food(ModFoodComponents.PEPPER).fireproof()));
+    public static final Item CHEESE = registerItem("cheese", new Item(new FabricItemSettings().food(ModFoodComponents.CHEESE).maxCount(16)));
 
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registries.ITEM, new Identifier(TheOnlyModYouWillEverNeed.MOD_ID, name), item);

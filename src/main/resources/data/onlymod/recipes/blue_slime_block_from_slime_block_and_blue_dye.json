@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "#": {
+      "item": "minecraft:slime_block"
+    },
+    "1": {
+      "item": "minecraft:blue_dye"
+    }
+  },
+  "pattern": [
+    "###",
+    "#1#",
+    "###"
+  ],
+  "result": {
+    "count": 8,
+    "item": "onlymod:blue_slime_block"
+  },
+  "show_notification": true
+}

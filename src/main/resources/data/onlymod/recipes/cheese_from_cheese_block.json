@@ -1,0 +1,14 @@
+{
+  "type": "crafting_shapeless",
+  "category": "misc",
+  "key": {
+    "#": {
+      "item": "onlymod:cheese_block"
+    }
+  },
+  "result": {
+    "count": 4,
+    "item": "onlymod:cheese"
+  },
+  "show_notification": true
+}

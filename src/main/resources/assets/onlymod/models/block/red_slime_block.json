@@ -1,0 +1,6 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "onlymod:block/red_slime_block"
+  }
+}
