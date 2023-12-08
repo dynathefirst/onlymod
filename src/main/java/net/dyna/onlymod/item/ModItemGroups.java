@@ -71,7 +71,6 @@ public class ModItemGroups {
                         entries.add(ModItems.ICICLE_SHARD);
                         entries.add(ModBlocks.DARK_PRISMARINE_WALL);
                         entries.add(ModItems.DYNAMITE);
-                        entries.add(ModItems.NO_BOOM_DYNAMITE);
                         entries.add(ModItems.HEAVY_IRON);
                         entries.add(ModItems.HEAVY_IRON_PICKAXE);
                         entries.add(ModItems.HEAVY_IRON_AXE);

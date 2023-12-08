@@ -6,7 +6,7 @@
       "item": "minecraft:stick"
     },
     "X": {
-      "item": "onlymod:ruby"
+      "item": "onlymod:heavy_iron"
     }
   },
   "pattern": [
@@ -15,7 +15,7 @@
     " #"
   ],
   "result": {
-    "item": "onlymod:ruby_hoe"
+    "item": "onlymod:heavy_iron_hoe"
   },
   "show_notification": true
 }

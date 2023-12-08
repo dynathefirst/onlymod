@@ -30,7 +30,6 @@ public class ModItems {
     public static final Item RUBY_SWORD = registerItem("ruby_sword", new SwordItem(ModToolMaterial.RUBY, 5, 3f, new FabricItemSettings()));
     public static final Item RUBY_HOE = registerItem("ruby_hoe", new HoeItem(ModToolMaterial.RUBY, 0, 0f, new FabricItemSettings()));
     public static final Item DYNAMITE = registerItem("dynamite", new DynamiteItem(new FabricItemSettings()));
-    public static final Item NO_BOOM_DYNAMITE = registerItem("no_boom_dynamite", new NoBoomDynamiteItem(new FabricItemSettings()));
     public static final Item MACE = registerItem("mace", new SwordItem(ModToolMaterial.MACE, 5, 3.7f, new FabricItemSettings().rarity(Rarity.EPIC)));
     public static final Item HEAVY_IRON = registerItem("heavy_iron", new Item(new FabricItemSettings()));
     public static final Item HEAVY_IRON_SWORD = registerItem("heavy_iron_sword", new SwordItem(ModToolMaterial.HEAVY_IRON, 3, -2.4F, new FabricItemSettings()));

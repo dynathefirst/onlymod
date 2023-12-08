@@ -6,16 +6,16 @@
       "item": "minecraft:stick"
     },
     "X": {
-      "item": "onlymod:ruby"
+      "item": "onlymod:heavy_iron"
     }
   },
   "pattern": [
-    "X",
-    "#",
-    "#"
+    "XXX",
+    " # ",
+    " # "
   ],
   "result": {
-    "item": "onlymod:ruby_shovel"
+    "item": "onlymod:heavy_iron_pickaxe"
   },
   "show_notification": true
 }
