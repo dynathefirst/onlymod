@@ -1,11 +1,11 @@
 {
-  "type": "crafting_shapeless",
+  "type": "minecraft:crafting_shapeless",
   "category": "misc",
-  "key": {
-    "#": {
+  "ingredients": [
+    {
       "item": "onlymod:cheese_block"
     }
-  },
+  ],
   "result": {
     "count": 4,
     "item": "onlymod:cheese"

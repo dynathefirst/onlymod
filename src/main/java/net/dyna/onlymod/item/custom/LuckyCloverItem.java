@@ -28,7 +28,7 @@ public class LuckyCloverItem extends Item {
 
     @Override
     public void appendTooltip(ItemStack stack, @Nullable World world, List<Text> tooltip, TooltipContext context) {
-        tooltip.add(Text.translatable("tooltip.onlymod.cave_detector.tooltip"));
+        tooltip.add(Text.translatable("tooltip.onlymod.lucky_clover.tooltip"));
         super.appendTooltip(stack, world, tooltip, context);
     }
 }

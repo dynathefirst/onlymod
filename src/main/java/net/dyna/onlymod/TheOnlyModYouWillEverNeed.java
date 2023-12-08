@@ -5,6 +5,8 @@ import net.dyna.onlymod.enchantment.PetrificationEnchantment;
 import net.dyna.onlymod.item.ModItemGroups;
 import net.dyna.onlymod.item.ModItems;
 import net.dyna.onlymod.sound.ModSounds;
+import net.dyna.onlymod.util.ModCustomTrades;
+import net.dyna.onlymod.villager.ModVillagers;
 import net.fabricmc.api.ModInitializer;
 
 import net.fabricmc.fabric.api.registry.FlammableBlockRegistry;
@@ -28,6 +30,8 @@ public class TheOnlyModYouWillEverNeed implements ModInitializer {
 		ModItems.registerModItems();
 		ModBlocks.registerModBlocks();
 		ModSounds.registerSounds();
+		ModVillagers.registerVillagers();
+		ModCustomTrades.registerCustomTrades();
 
 		Registry.register(Registries.ENCHANTMENT, new Identifier("onlymod", "petrification"), PETRIFICATION);
 

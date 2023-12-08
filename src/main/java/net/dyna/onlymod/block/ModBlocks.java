@@ -1,5 +1,6 @@
 package net.dyna.onlymod.block;
 
+import net.dyna.onlymod.block.custom.IcicleBlock;
 import net.dyna.onlymod.block.custom.PepperCropBlock;
 import net.dyna.onlymod.world.tree.BaobabSaplingGenerator;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
@@ -51,6 +52,8 @@ public class ModBlocks {
     public static final Block BAOBAB_LEAVES = registerBlock("baobab_leaves", new LeavesBlock(FabricBlockSettings.copyOf(Blocks.OAK_LEAVES).nonOpaque()));
     public static final Block RUBBLE = registerBlock("rubble", new Block(FabricBlockSettings.copyOf(Blocks.GRAVEL)));
     public static final Block BAOBAB_SAPLING = registerBlock("baobab_sapling", new SaplingBlock(new BaobabSaplingGenerator(), FabricBlockSettings.copyOf(Blocks.OAK_SAPLING)));
+    public static final Block ICICLE = registerBlock("icicle", new IcicleBlock(FabricBlockSettings.copyOf(Blocks.ICE).nonOpaque()));
+    public static final Block DARK_PRISMARINE_WALL = registerBlock("dark_prismarine_wall", new WallBlock(FabricBlockSettings.copyOf(Blocks.DARK_PRISMARINE)));
 
     private static Block registerBlock(String name, Block block) {
         registerBlockItem(name, block);

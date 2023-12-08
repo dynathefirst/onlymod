@@ -62,6 +62,22 @@ public class ModItemGroups {
                         entries.add(ModBlocks.BAOBAB_LEAVES);
                         entries.add(ModBlocks.BAOBAB_SAPLING);
                         entries.add(ModBlocks.RUBBLE);
+                        entries.add(ModItems.RUBY_PICKAXE);
+                        entries.add(ModItems.RUBY_AXE);
+                        entries.add(ModItems.RUBY_SHOVEL);
+                        entries.add(ModItems.RUBY_SWORD);
+                        entries.add(ModItems.RUBY_HOE);
+                        entries.add(ModBlocks.ICICLE);
+                        entries.add(ModItems.ICICLE_SHARD);
+                        entries.add(ModBlocks.DARK_PRISMARINE_WALL);
+                        entries.add(ModItems.DYNAMITE);
+                        entries.add(ModItems.NO_BOOM_DYNAMITE);
+                        entries.add(ModItems.HEAVY_IRON);
+                        entries.add(ModItems.HEAVY_IRON_PICKAXE);
+                        entries.add(ModItems.HEAVY_IRON_AXE);
+                        entries.add(ModItems.HEAVY_IRON_SHOVEL);
+                        entries.add(ModItems.HEAVY_IRON_SWORD);
+                        entries.add(ModItems.HEAVY_IRON_HOE);
                     }).build());
 
 

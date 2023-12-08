@@ -63,5 +63,22 @@
   "block.onlymod.baobab_planks": "Baobab Planks",
   "block.onlymod.baobab_leaves": "Baobab Leaves",
   "block.onlymod.baobab_sapling": "Baobab Sapling",
-  "block.onlymod.rubble": "Rubble"
+  "block.onlymod.rubble": "Rubble",
+  "item.onlymod.icicle_shard": "Icicle Shard",
+  "item.onlymod.ruby_pickaxe": "Ruby Pickaxe",
+  "item.onlymod.ruby_axe": "Ruby Axe",
+  "item.onlymod.ruby_shovel": "Ruby Shovel",
+  "item.onlymod.ruby_sword": "Ruby Sword",
+  "item.onlymod.ruby_hoe": "Ruby Hoe",
+  "block.onlymod.icicle": "Icicle",
+  "block.onlymod.dark_prismarine_wall": "Dark Prismarine Wall",
+  "item.onlymod.dynamite": "Dynamite",
+  "item.onlymod.no_boom_dynamite": "No Boom Dynamite",
+  "entity.minecraft.villager.demolitioner": "Demolitioner",
+  "item.onlymod.heavy_iron": "Heavy Iron",
+  "item.onlymod.heavy_iron_pickaxe": "Heavy Iron Pickaxe",
+  "item.onlymod.heavy_iron_axe": "Heavy Iron Axe",
+  "item.onlymod.heavy_iron_shovel": "Heavy Iron Shovel",
+  "item.onlymod.heavy_iron_sword": "Heavy Iron Sword",
+  "item.onlymod.heavy_iron_hoe": "Heavy Iron Hoe"
 }
