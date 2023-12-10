@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
-    "onlymod:cut_obsidian"
+    "onlymod:cut_obsidian",
+    "onlymod:obsidian_glass"
   ]
 }

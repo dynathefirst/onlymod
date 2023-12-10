@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "01"
+  ],
+  "key": {
+    "0": {
+      "item": "onlymod:stone_chunk"
+    },
+    "1": {
+      "item": "minecraft:snowball"
+    }
+  },
+  "result": {
+    "item": "onlymod:stony_snowball",
+    "count": 2
+  }
+}

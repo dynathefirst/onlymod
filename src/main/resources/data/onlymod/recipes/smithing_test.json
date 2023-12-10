@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:smithing_transform",
+  "addition": {
+    "item": "onlymod:ruby"
+  },
+  "base": {
+    "item": "minecraft:diamond_boots"
+  },
+  "result": {
+    "item": "onlymod:cheese_block"
+  },
+  "template": {
+    "item": "onlymod:cheese"
+  }
+}

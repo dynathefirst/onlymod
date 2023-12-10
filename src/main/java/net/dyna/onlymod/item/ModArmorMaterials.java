@@ -3,6 +3,7 @@ package net.dyna.onlymod.item;
 import net.dyna.onlymod.TheOnlyModYouWillEverNeed;
 import net.minecraft.item.ArmorItem;
 import net.minecraft.item.ArmorMaterial;
+import net.minecraft.item.Items;
 import net.minecraft.recipe.Ingredient;
 import net.minecraft.sound.SoundEvent;
 import net.minecraft.sound.SoundEvents;
@@ -11,7 +12,11 @@ import java.util.function.Supplier;
 
 public enum ModArmorMaterials implements ArmorMaterial {
     HEAVY_IRON("heavy_iron", 33, new int[] { 4, 9, 7, 4 }, 10,
-            SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND, 2f, 0.0f, () -> Ingredient.ofItems(ModItems.HEAVY_IRON));
+            SoundEvents.ITEM_ARMOR_EQUIP_IRON, 2f, 0.0f, () -> Ingredient.ofItems(ModItems.HEAVY_IRON)),
+    OBSIDIAN("obsidian", 6, new int[] { 5, 10, 8, 5 }, 20,
+            SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND, 4f, 0.1f, () -> Ingredient.ofItems(Items.OBSIDIAN)),
+    FINAL_IGNORE("n/a", 0, new int[] { 0, 0, 0, 0 }, 0,
+            SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND, 0f, 0.0f, () -> Ingredient.ofItems(Items.AIR));
 
     private final String name;
     private final int durabilityMultiplier;

@@ -30,6 +30,7 @@ public class ModItems {
     public static final Item RUBY_SWORD = registerItem("ruby_sword", new SwordItem(ModToolMaterial.RUBY, 5, 3f, new FabricItemSettings()));
     public static final Item RUBY_HOE = registerItem("ruby_hoe", new HoeItem(ModToolMaterial.RUBY, 0, 0f, new FabricItemSettings()));
     public static final Item DYNAMITE = registerItem("dynamite", new DynamiteItem(new FabricItemSettings()));
+    public static final Item NO_BOOM_DYNAMITE = registerItem("no_boom_dynamite", new NoBoomDynamiteItem(new FabricItemSettings()));
     public static final Item MACE = registerItem("mace", new SwordItem(ModToolMaterial.MACE, 5, 3.7f, new FabricItemSettings().rarity(Rarity.EPIC)));
     public static final Item HEAVY_IRON = registerItem("heavy_iron", new Item(new FabricItemSettings()));
     public static final Item HEAVY_IRON_SWORD = registerItem("heavy_iron_sword", new SwordItem(ModToolMaterial.HEAVY_IRON, 3, -2.4F, new FabricItemSettings()));
@@ -41,6 +42,18 @@ public class ModItems {
     public static final Item HEAVY_IRON_CHESTPLATE = registerItem("heavy_iron_chestplate", new ArmorItem(ModArmorMaterials.HEAVY_IRON, ArmorItem.Type.CHESTPLATE, new FabricItemSettings()));
     public static final Item HEAVY_IRON_LEGGINGS = registerItem("heavy_iron_leggings", new ArmorItem(ModArmorMaterials.HEAVY_IRON, ArmorItem.Type.LEGGINGS, new FabricItemSettings()));
     public static final Item HEAVY_IRON_BOOTS = registerItem("heavy_iron_boots", new ArmorItem(ModArmorMaterials.HEAVY_IRON, ArmorItem.Type.BOOTS, new FabricItemSettings()));
+    public static final Item STONY_SNOWBALL = registerItem("stony_snowball", new StonySnowballItem(new FabricItemSettings().maxCount(16)));
+    public static final Item TIN_INGOT = registerItem("tin_ingot", new Item(new FabricItemSettings()));
+    public static final Item PLATINUM_INGOT = registerItem("platinum_ingot", new Item(new FabricItemSettings()));
+    public static final Item BRONZE_INGOT = registerItem("bronze_ingot", new Item(new FabricItemSettings()));
+    public static final Item AMETHYST_DUST = registerItem("amethyst_dust", new Item(new FabricItemSettings()));
+    public static final Item NETHERITE_NUGGET = registerItem("netherite_nugget", new Item(new FabricItemSettings()));
+    public static final Item NETHERITE_MELON_SLICE = registerItem("netherite_melon_slice", new Item(new FabricItemSettings()));
+    public static final Item OBSIDIAN_HELMET = registerItem("obsidian_helmet", new ArmorItem(ModArmorMaterials.OBSIDIAN, ArmorItem.Type.HELMET, new FabricItemSettings()));
+    public static final Item OBSIDIAN_CHESTPLATE = registerItem("obsidian_chestplate", new ArmorItem(ModArmorMaterials.OBSIDIAN, ArmorItem.Type.CHESTPLATE, new FabricItemSettings()));
+    public static final Item OBSIDIAN_LEGGINGS = registerItem("obsidian_leggings", new ArmorItem(ModArmorMaterials.OBSIDIAN, ArmorItem.Type.LEGGINGS, new FabricItemSettings()));
+    public static final Item OBSIDIAN_BOOTS = registerItem("obsidian_boots", new ArmorItem(ModArmorMaterials.OBSIDIAN, ArmorItem.Type.BOOTS, new FabricItemSettings()));
+    public static final Item CRYSTALLIZED_HONEY = registerItem("crystallized_honey", new Item(new FabricItemSettings().food(ModFoodComponents.CRYSTALLIZED_HONEY)));
 
     /* Rarity Levels:
     Common - White; Applies to most items.
@@ -55,6 +68,6 @@ public class ModItems {
     }
 
     public static void registerModItems() {
-        TheOnlyModYouWillEverNeed.LOGGER.info("Registering ModItems for " + TheOnlyModYouWillEverNeed.MOD_ID);
+        TheOnlyModYouWillEverNeed.LOGGER.info("Registering Mod Items for " + TheOnlyModYouWillEverNeed.MOD_ID);
     }
 }

@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "onlymod:heavy_iron_helmet",
+    "onlymod:heavy_iron_chestplate",
+    "onlymod:heavy_iron_leggings",
+    "onlymod:heavy_iron_boots"
+  ]
+}

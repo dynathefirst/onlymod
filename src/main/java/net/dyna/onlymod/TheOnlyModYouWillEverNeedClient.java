@@ -16,8 +16,11 @@ public class TheOnlyModYouWillEverNeedClient implements ClientModInitializer {
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.BAOBAB_LEAVES, RenderLayer.getCutout());
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.PEPPER_CROP, RenderLayer.getCutout());
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.BAOBAB_SAPLING, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.OBSIDIAN_GLASS, RenderLayer.getCutout());
 
         //EntityRendererRegistry.register(ModEntities.STONE_CHUNK_PROJECTILE, FlyingItemEntityRenderer::new);
         EntityRendererRegistry.register(ModEntities.DYNAMITE, FlyingItemEntityRenderer::new);
+        EntityRendererRegistry.register(ModEntities.NO_BOOM_DYNAMITE, FlyingItemEntityRenderer::new);
+        EntityRendererRegistry.register(ModEntities.STONY_SNOWBALL, FlyingItemEntityRenderer::new);
     }
 }

@@ -54,6 +54,7 @@ public class ModBlocks {
     public static final Block BAOBAB_SAPLING = registerBlock("baobab_sapling", new SaplingBlock(new BaobabSaplingGenerator(), FabricBlockSettings.copyOf(Blocks.OAK_SAPLING)));
     public static final Block ICICLE = registerBlock("icicle", new IcicleBlock(FabricBlockSettings.copyOf(Blocks.ICE).nonOpaque()));
     public static final Block DARK_PRISMARINE_WALL = registerBlock("dark_prismarine_wall", new WallBlock(FabricBlockSettings.copyOf(Blocks.DARK_PRISMARINE)));
+    public static final Block OBSIDIAN_GLASS = registerBlock("obsidian_glass", new Block(FabricBlockSettings.copyOf(Blocks.OBSIDIAN).nonOpaque().sounds(BlockSoundGroup.GLASS).requiresTool()));
 
     private static Block registerBlock(String name, Block block) {
         registerBlockItem(name, block);

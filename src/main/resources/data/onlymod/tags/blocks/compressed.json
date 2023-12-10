@@ -1,0 +1,24 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "#fabric:compressed",
+      "required": false
+    },
+    "onlymod:barely_compressed_dirt",
+    "onlymod:slightly_compressed_dirt",
+    "onlymod:somewhat_compressed_dirt",
+    "onlymod:barely_compressed_sand",
+    "onlymod:slightly_compressed_sand",
+    "onlymod:somewhat_compressed_sand",
+    "onlymod:barely_compressed_diorite",
+    "onlymod:slightly_compressed_diorite",
+    "onlymod:somewhat_compressed_diorite",
+    "onlymod:barely_compressed_cobblestone",
+    "onlymod:slightly_compressed_cobblestone",
+    "onlymod:somewhat_compressed_cobblestone",
+    "onlymod:barely_compressed_andesite",
+    "onlymod:slightly_compressed_andesite",
+    "onlymod:somewhat_compressed_andesite"
+  ]
+}

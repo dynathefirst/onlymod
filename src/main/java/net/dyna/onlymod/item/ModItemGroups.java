@@ -71,12 +71,30 @@ public class ModItemGroups {
                         entries.add(ModItems.ICICLE_SHARD);
                         entries.add(ModBlocks.DARK_PRISMARINE_WALL);
                         entries.add(ModItems.DYNAMITE);
+                        entries.add(ModItems.NO_BOOM_DYNAMITE);
                         entries.add(ModItems.HEAVY_IRON);
                         entries.add(ModItems.HEAVY_IRON_PICKAXE);
                         entries.add(ModItems.HEAVY_IRON_AXE);
                         entries.add(ModItems.HEAVY_IRON_SHOVEL);
                         entries.add(ModItems.HEAVY_IRON_SWORD);
                         entries.add(ModItems.HEAVY_IRON_HOE);
+                        entries.add(ModItems.HEAVY_IRON_HELMET);
+                        entries.add(ModItems.HEAVY_IRON_CHESTPLATE);
+                        entries.add(ModItems.HEAVY_IRON_LEGGINGS);
+                        entries.add(ModItems.HEAVY_IRON_BOOTS);
+                        entries.add(ModItems.STONY_SNOWBALL);
+                        entries.add(ModItems.TIN_INGOT);
+                        entries.add(ModItems.PLATINUM_INGOT);
+                        entries.add(ModItems.BRONZE_INGOT);
+                        entries.add(ModItems.AMETHYST_DUST);
+                        entries.add(ModItems.NETHERITE_NUGGET);
+                        entries.add(ModItems.NETHERITE_MELON_SLICE);
+                        entries.add(ModBlocks.OBSIDIAN_GLASS);
+                        entries.add(ModItems.OBSIDIAN_HELMET);
+                        entries.add(ModItems.OBSIDIAN_CHESTPLATE);
+                        entries.add(ModItems.OBSIDIAN_LEGGINGS);
+                        entries.add(ModItems.OBSIDIAN_BOOTS);
+                        entries.add(ModItems.CRYSTALLIZED_HONEY);
                     }).build());
 
 

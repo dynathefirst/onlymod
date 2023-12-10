@@ -2,6 +2,8 @@ package net.dyna.onlymod.entity;
 
 import net.dyna.onlymod.TheOnlyModYouWillEverNeed;
 import net.dyna.onlymod.entity.custom.DynamiteEntity;
+import net.dyna.onlymod.entity.custom.NoBoomDynamiteEntity;
+import net.dyna.onlymod.entity.custom.StonySnowballEntity;
 import net.fabricmc.fabric.api.object.builder.v1.entity.FabricEntityTypeBuilder;
 import net.minecraft.entity.EntityDimensions;
 import net.minecraft.entity.EntityType;
@@ -19,4 +21,12 @@ public class ModEntities {
     public static final EntityType<DynamiteEntity> DYNAMITE = Registry.register(Registries.ENTITY_TYPE,
             new Identifier(TheOnlyModYouWillEverNeed.MOD_ID, "dynamite"), FabricEntityTypeBuilder.<DynamiteEntity>create
                             (SpawnGroup.MISC, DynamiteEntity::new).dimensions(EntityDimensions.fixed(0.25f, 0.25f)).build());
+
+    public static final EntityType<NoBoomDynamiteEntity> NO_BOOM_DYNAMITE = Registry.register(Registries.ENTITY_TYPE,
+            new Identifier(TheOnlyModYouWillEverNeed.MOD_ID, "no_boom_dynamite"), FabricEntityTypeBuilder.<NoBoomDynamiteEntity>create
+                    (SpawnGroup.MISC, NoBoomDynamiteEntity::new).dimensions(EntityDimensions.fixed(0.25f, 0.25f)).build());
+
+    public static final EntityType<StonySnowballEntity> STONY_SNOWBALL = Registry.register(Registries.ENTITY_TYPE,
+            new Identifier(TheOnlyModYouWillEverNeed.MOD_ID, "stony_snowball"), FabricEntityTypeBuilder.<StonySnowballEntity>create
+                    (SpawnGroup.MISC, StonySnowballEntity::new).dimensions(EntityDimensions.fixed(0.25f, 0.25f)).build());
 }

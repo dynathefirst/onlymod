@@ -1,9 +1,9 @@
 {
 	"credit": "Made with Blockbench",
 	"textures": {
-		"1": "item/mace_texture1",
-		"2": "item/mace_texture2",
-		"particle": "item/mace_texture2"
+		"1": "onlymod:item/mace_texture1",
+		"2": "onlymod:item/mace_texture2",
+		"particle": "onlymod:item/mace_texture2"
 	},
 	"elements": [
 		{

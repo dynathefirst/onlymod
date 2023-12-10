@@ -1,0 +1,21 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "category": "misc",
+    "pattern": [
+        "000",
+        "010",
+        "000"
+    ],
+    "key": {
+        "0": {
+            "item": "onlymod:netherite_nugget"
+        },
+        "1": {
+            "item": "minecraft:melon_slice"
+        }
+    },
+    "result": {
+        "item": "onlymod:netherite_melon_slice",
+        "count": 1
+    }
+}
