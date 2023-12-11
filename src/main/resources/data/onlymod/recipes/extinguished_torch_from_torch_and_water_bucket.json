@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "1",
+    "0"
+  ],
+  "key": {
+    "0": {
+      "item": "minecraft:torch"
+    },
+    "1": {
+      "item": "minecraft:water_bucket"
+    }
+  },
+  "result": {
+    "item": "onlymod:extinguished_torch",
+    "count": 1
+  }
+}

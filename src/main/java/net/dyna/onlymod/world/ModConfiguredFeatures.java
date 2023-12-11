@@ -21,15 +21,26 @@ import java.util.List;
 
 public class ModConfiguredFeatures {
     public static final RegistryKey<ConfiguredFeature<?, ?>> RUBY_ORE_KEY = registerKey("ruby_ore");
+    public static final RegistryKey<ConfiguredFeature<?, ?>> CITRINE_ORE_KEY = registerKey("citrine_ore");
+
     public static final RegistryKey<ConfiguredFeature<?, ?>> BAOBAB_KEY = registerKey("baobab");
 
     public static void bootstrap(Registerable<ConfiguredFeature<?, ?>> context) {
+        RuleTest stoneReplaceables = new TagMatchRuleTest(BlockTags.STONE_ORE_REPLACEABLES);
+        RuleTest deepslateReplaceables = new TagMatchRuleTest(BlockTags.DEEPSLATE_ORE_REPLACEABLES);
         RuleTest netherReplaceables = new TagMatchRuleTest(BlockTags.BASE_STONE_NETHER);
 
         List<OreFeatureConfig.Target> netherRubyOres =
                 List.of(OreFeatureConfig.createTarget(netherReplaceables, ModBlocks.BARELY_COMPRESSED_DIRT.getDefaultState())); //TODO Change to Ruby Ore once I make it.
 
-        register(context, RUBY_ORE_KEY, Feature.ORE, new OreFeatureConfig(netherRubyOres, 5));
+        List<OreFeatureConfig.Target> overworldCitrineOres =
+                List.of(OreFeatureConfig.createTarget(stoneReplaceables, ModBlocks.CITRINE_ORE.getDefaultState()),
+                        OreFeatureConfig.createTarget(deepslateReplaceables, ModBlocks.DEEPSLATE_CITRINE_ORE.getDefaultState()));
+
+
+        register(context, RUBY_ORE_KEY, Feature.ORE, new OreFeatureConfig(netherRubyOres, 2));
+        register(context, CITRINE_ORE_KEY, Feature.ORE, new OreFeatureConfig(overworldCitrineOres, 8));
+
         register(context, BAOBAB_KEY, Feature.TREE, new TreeFeatureConfig.Builder(
                 BlockStateProvider.of(ModBlocks.BAOBAB_LOG),
                 new StraightTrunkPlacer(5, 4, 3),

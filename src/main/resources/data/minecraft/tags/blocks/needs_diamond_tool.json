@@ -2,6 +2,7 @@
   "replace": false,
   "values": [
     "onlymod:cut_obsidian",
-    "onlymod:obsidian_glass"
+    "onlymod:obsidian_glass",
+    "minecraft:reinforced_deepslate"
   ]
 }

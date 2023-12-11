@@ -39,9 +39,7 @@
   "block.onlymod.slightly_compressed_andesite": "Slightly Compressed Andesite",
   "block.onlymod.somewhat_compressed_andesite": "Somewhat Compressed Andesite",
   "item.onlymod.dog": "Music Disc",
-  "item.onlymod.dog.desc": "C418 - Dog",
-  "advancements.woofwoof.title": "Woof Woof!",
-  "advancements.woofwoof.desc": "Obtain Music Disc 'Dog'.",
+  "item.onlymod.dog.desc": "C418 - dog",
   "subtitles.disc_dog": "Music Disc Plays",
   "tooltip.onlymod.cave_detector.tooltip": "Finds caves underground",
   "tooltip.onlymod.lucky_clover.tooltip": "Gives the user luck when used",
@@ -97,5 +95,14 @@
   "item.onlymod.obsidian_chestplate": "Obsidian Chestplate",
   "item.onlymod.obsidian_leggings": "Obsidian Leggings",
   "item.onlymod.obsidian_boots": "Obsidian Boots",
-  "item.onlymod.crystallized_honey": "Crystallized Honey"
+  "item.onlymod.crystallized_honey": "Crystallized Honey",
+  "block.onlymod.extinguished_torch": "Extinguished Torch",
+  "block.onlymod.extinguished_wall_torch": "Extinguished Wall Torch",
+  "item.onlymod.citrine": "Citrine",
+  "item.onlymod.raw_citrine": "Raw Citrine",
+  "block.onlymod.citrine_block": "Block of Citrine",
+  "block.onlymod.citrine_ore": "Citrine Ore",
+  "block.onlymod.deepslate_citrine_ore": "Deepslate Citrine Ore",
+  "advancement.woofwoof": "Woof Woof!",
+  "advancement.woofwoof.desc": "Find the Dog disc."
 }

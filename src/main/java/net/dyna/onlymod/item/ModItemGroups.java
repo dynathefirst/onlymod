@@ -95,6 +95,13 @@ public class ModItemGroups {
                         entries.add(ModItems.OBSIDIAN_LEGGINGS);
                         entries.add(ModItems.OBSIDIAN_BOOTS);
                         entries.add(ModItems.CRYSTALLIZED_HONEY);
+                        entries.add(ModBlocks.EXTINGUISHED_TORCH);
+                        entries.add(ModBlocks.EXTINGUISHED_WALL_TORCH);
+                        entries.add(ModItems.CITRINE);
+                        entries.add(ModItems.RAW_CITRINE);
+                        entries.add(ModBlocks.CITRINE_BLOCK);
+                        entries.add(ModBlocks.CITRINE_ORE);
+                        entries.add(ModBlocks.DEEPSLATE_CITRINE_ORE);
                     }).build());
 
 

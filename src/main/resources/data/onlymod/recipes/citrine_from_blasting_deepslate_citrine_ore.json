@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:blasting",
+  "ingredient": {
+    "item": "onlymod:deepslate_citrine_ore"
+  },
+  "result": "onlymod:citrine",
+  "experience": 0.7,
+  "cookingtime": 100
+}

@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "onlymod:extinguished_torch"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "item": "onlymod:extinguished_wall_torch"
+  },
+  "show_notification": true
+}

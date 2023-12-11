@@ -8,6 +8,10 @@
     "onlymod:barely_compressed_cobblestone",
     "onlymod:slightly_compressed_cobblestone",
     "onlymod:somewhat_compressed_cobblestone",
-    "onlymod:obsidian_glass"
+    "onlymod:obsidian_glass",
+    "onlymod:citrine_ore",
+    "onlymod:deepslate_citrine_ore",
+    "onlymod:citrine_block",
+    "minecraft:reinforced_deepslate"
   ]
 }

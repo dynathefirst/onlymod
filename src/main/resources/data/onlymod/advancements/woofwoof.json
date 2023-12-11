@@ -4,23 +4,31 @@
       "item": "minecraft:jukebox"
     },
     "title": {
-      "translate": "advancements.woofwoof.title"
+      "translate": "advancement.woofwoof"
     },
     "description": {
-      "translate": "advancements.woofwoof.desc"
+      "translate": "advancement.woofwoof.desc"
     },
+    "background": "minecraft:textures/gui/advancements/backgrounds/stone.png",
     "frame": "task",
     "show_toast": true,
     "announce_to_chat": true,
     "hidden": false
   },
+  "parent": "minecraft:adventure/root",
   "criteria": {
     "woofwoof": {
-      "trigger": "minecraft:impossible"
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "onlymod:dog"
+            ]
+          }
+        ]
+      }
     }
   },
-  "rewards": {
-    "experience": 1
-  },
-  "parent": "minecraft:story/root"
+  "sends_telemetry_event": true
 }

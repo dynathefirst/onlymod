@@ -20,7 +20,7 @@ public class ModItems {
     public static final Item CAVE_DETECTOR = registerItem("cave_detector", new CaveDetectorItem(new FabricItemSettings().maxCount(1).maxDamage(256)));
     public static final Item LUCKY_CLOVER = registerItem("lucky_clover", new LuckyCloverItem(new FabricItemSettings().maxCount(1)));
     public static final Item CREEPER_ESSENCE = registerItem("creeper_essence", new Item(new FabricItemSettings()));
-    public static final Item DOG = registerItem("dog", new MusicDiscItem(7, ModSounds.DOG, new FabricItemSettings().maxCount(1), 140));
+    public static final Item DOG = registerItem("dog", new MusicDiscItem(7, ModSounds.DOG, new FabricItemSettings().maxCount(1).rarity(Rarity.RARE), 140));
     public static final Item PEPPER = registerItem("pepper", new AliasedBlockItem(ModBlocks.PEPPER_CROP, new FabricItemSettings().food(ModFoodComponents.PEPPER).fireproof()));
     public static final Item CHEESE = registerItem("cheese", new Item(new FabricItemSettings().food(ModFoodComponents.CHEESE).maxCount(16)));
     public static final Item ICICLE_SHARD = registerItem("icicle_shard", new SwordItem(ModToolMaterial.ICICLE, 5, 7f, new FabricItemSettings()));
@@ -54,6 +54,8 @@ public class ModItems {
     public static final Item OBSIDIAN_LEGGINGS = registerItem("obsidian_leggings", new ArmorItem(ModArmorMaterials.OBSIDIAN, ArmorItem.Type.LEGGINGS, new FabricItemSettings()));
     public static final Item OBSIDIAN_BOOTS = registerItem("obsidian_boots", new ArmorItem(ModArmorMaterials.OBSIDIAN, ArmorItem.Type.BOOTS, new FabricItemSettings()));
     public static final Item CRYSTALLIZED_HONEY = registerItem("crystallized_honey", new Item(new FabricItemSettings().food(ModFoodComponents.CRYSTALLIZED_HONEY)));
+    public static final Item CITRINE = registerItem("citrine", new Item(new FabricItemSettings()));
+    public static final Item RAW_CITRINE = registerItem("raw_citrine", new Item(new FabricItemSettings()));
 
     /* Rarity Levels:
     Common - White; Applies to most items.

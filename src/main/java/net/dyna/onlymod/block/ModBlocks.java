@@ -2,17 +2,22 @@ package net.dyna.onlymod.block;
 
 import net.dyna.onlymod.block.custom.IcicleBlock;
 import net.dyna.onlymod.block.custom.PepperCropBlock;
+import net.dyna.onlymod.block.torch.ExtinguishedTorchBlock;
+import net.dyna.onlymod.block.torch.ExtinguishedWallTorchBlock;
+import net.dyna.onlymod.item.ModItemGroups;
 import net.dyna.onlymod.world.tree.BaobabSaplingGenerator;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.dyna.onlymod.TheOnlyModYouWillEverNeed;
 import net.minecraft.block.*;
+import net.minecraft.block.piston.PistonBehavior;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.util.Identifier;
+import net.minecraft.util.math.intprovider.UniformIntProvider;
 
 public class ModBlocks {
 
@@ -55,6 +60,11 @@ public class ModBlocks {
     public static final Block ICICLE = registerBlock("icicle", new IcicleBlock(FabricBlockSettings.copyOf(Blocks.ICE).nonOpaque()));
     public static final Block DARK_PRISMARINE_WALL = registerBlock("dark_prismarine_wall", new WallBlock(FabricBlockSettings.copyOf(Blocks.DARK_PRISMARINE)));
     public static final Block OBSIDIAN_GLASS = registerBlock("obsidian_glass", new Block(FabricBlockSettings.copyOf(Blocks.OBSIDIAN).nonOpaque().sounds(BlockSoundGroup.GLASS).requiresTool()));
+    public static final Block EXTINGUISHED_TORCH = registerBlock("extinguished_torch", new ExtinguishedTorchBlock(FabricBlockSettings.create().noCollision().breakInstantly().sounds(BlockSoundGroup.WOOD).pistonBehavior(PistonBehavior.DESTROY).nonOpaque()));
+    public static final Block EXTINGUISHED_WALL_TORCH = registerBlock("extinguished_wall_torch", new ExtinguishedWallTorchBlock(FabricBlockSettings.create().noCollision().breakInstantly().sounds(BlockSoundGroup.WOOD).pistonBehavior(PistonBehavior.DESTROY).nonOpaque()));
+    public static final Block CITRINE_BLOCK = registerBlock("citrine_block", new Block(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK).requiresTool()));
+    public static final Block CITRINE_ORE = registerBlock("citrine_ore", new ExperienceDroppingBlock(FabricBlockSettings.copyOf(Blocks.STONE).requiresTool(), UniformIntProvider.create(3, 8)));
+    public static final Block DEEPSLATE_CITRINE_ORE = registerBlock("deepslate_citrine_ore", new ExperienceDroppingBlock(FabricBlockSettings.copyOf(Blocks.DEEPSLATE).requiresTool(), UniformIntProvider.create(3, 8)));
 
     private static Block registerBlock(String name, Block block) {
         registerBlockItem(name, block);
