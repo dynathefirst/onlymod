@@ -18,6 +18,7 @@ public class ModEntities {
             (SpawnGroup.MISC, StoneChunkProjectileEntity::new).dimensions(EntityDimensions.fixed(0.25f, 0.25f)).build());
      */
 
+    //Throwables
     public static final EntityType<DynamiteEntity> DYNAMITE = Registry.register(Registries.ENTITY_TYPE,
             new Identifier(TheOnlyModYouWillEverNeed.MOD_ID, "dynamite"), FabricEntityTypeBuilder.<DynamiteEntity>create
                             (SpawnGroup.MISC, DynamiteEntity::new).dimensions(EntityDimensions.fixed(0.25f, 0.25f)).build());
@@ -29,4 +30,9 @@ public class ModEntities {
     public static final EntityType<StonySnowballEntity> STONY_SNOWBALL = Registry.register(Registries.ENTITY_TYPE,
             new Identifier(TheOnlyModYouWillEverNeed.MOD_ID, "stony_snowball"), FabricEntityTypeBuilder.<StonySnowballEntity>create
                     (SpawnGroup.MISC, StonySnowballEntity::new).dimensions(EntityDimensions.fixed(0.25f, 0.25f)).build());
+
+    //Hostile Mobs
+    public static final EntityType<GhoulEntity> GHOUL = Registry.register(Registries.ENTITY_TYPE,
+            new Identifier(TheOnlyModYouWillEverNeed.MOD_ID, "ghoul"), FabricEntityTypeBuilder.create
+                    (SpawnGroup.MONSTER, GhoulEntity::new).dimensions(EntityDimensions.fixed(16f, 32f)).build());
 }
