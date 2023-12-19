@@ -2,6 +2,7 @@ package net.dyna.onlymod.entity;
 
 import net.dyna.onlymod.TheOnlyModYouWillEverNeed;
 import net.dyna.onlymod.entity.custom.DynamiteEntity;
+import net.dyna.onlymod.entity.custom.GhoulEntity;
 import net.dyna.onlymod.entity.custom.NoBoomDynamiteEntity;
 import net.dyna.onlymod.entity.custom.StonySnowballEntity;
 import net.fabricmc.fabric.api.object.builder.v1.entity.FabricEntityTypeBuilder;
@@ -33,6 +34,11 @@ public class ModEntities {
 
     //Hostile Mobs
     public static final EntityType<GhoulEntity> GHOUL = Registry.register(Registries.ENTITY_TYPE,
-            new Identifier(TheOnlyModYouWillEverNeed.MOD_ID, "ghoul"), FabricEntityTypeBuilder.create
-                    (SpawnGroup.MONSTER, GhoulEntity::new).dimensions(EntityDimensions.fixed(16f, 32f)).build());
+            new Identifier(TheOnlyModYouWillEverNeed.MOD_ID, "ghoul"),
+            FabricEntityTypeBuilder.<GhoulEntity>create(SpawnGroup.MONSTER, GhoulEntity::new)
+                    .dimensions(EntityDimensions.fixed(0.6f, 1.8f)).build());
+
+    public static void registerModEntities() {
+        TheOnlyModYouWillEverNeed.LOGGER.info("Registering Entities for " + TheOnlyModYouWillEverNeed.MOD_ID);
+    }
 }

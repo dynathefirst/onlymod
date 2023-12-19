@@ -2,9 +2,13 @@ package net.dyna.onlymod.item;
 
 import net.dyna.onlymod.TheOnlyModYouWillEverNeed;
 import net.dyna.onlymod.block.ModBlocks;
+import net.dyna.onlymod.entity.ModEntities;
 import net.dyna.onlymod.item.custom.*;
 import net.dyna.onlymod.sound.ModSounds;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
+import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
+import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroupEntries;
+import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.item.*;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
@@ -56,6 +60,17 @@ public class ModItems {
     public static final Item CRYSTALLIZED_HONEY = registerItem("crystallized_honey", new Item(new FabricItemSettings().food(ModFoodComponents.CRYSTALLIZED_HONEY)));
     public static final Item CITRINE = registerItem("citrine", new Item(new FabricItemSettings()));
     public static final Item RAW_CITRINE = registerItem("raw_citrine", new Item(new FabricItemSettings()));
+    public static final Item OBSIDIAN_SWORD = registerItem("obsidian_sword", new SwordItem(ModToolMaterial.OBSIDIAN, 4, -3.4F, new FabricItemSettings()));
+    public static final Item OBSIDIAN_SHOVEL = registerItem("obsidian_shovel", new ShovelItem(ModToolMaterial.OBSIDIAN, 2.5F, -4.0F, new FabricItemSettings()));
+    public static final Item OBSIDIAN_PICKAXE = registerItem("obsidian_pickaxe", new PickaxeItem(ModToolMaterial.OBSIDIAN, 2, -3.8F, new FabricItemSettings()));
+    public static final Item OBSIDIAN_AXE = registerItem("obsidian_axe", new AxeItem(ModToolMaterial.OBSIDIAN, 6.0F, -4.0F, new FabricItemSettings()));
+    public static final Item OBSIDIAN_HOE = registerItem("obsidian_hoe", new HoeItem(ModToolMaterial.OBSIDIAN, -3, -0.0F, new FabricItemSettings()));
+    public static final Item ENDERITE_INGOT = registerItem("enderite_ingot", new Item(new FabricItemSettings()));
+    public static final Item RAW_ENDERITE = registerItem("raw_enderite", new Item(new FabricItemSettings()));
+    public static final Item RAW_RUBY = registerItem("raw_ruby", new Item(new FabricItemSettings()));
+    public static final Item RAW_KUNZITE = registerItem("raw_kunzite", new Item(new FabricItemSettings()));
+    public static final Item KUNZITE_INGOT = registerItem("kunzite_ingot", new Item(new FabricItemSettings()));
+    public static final Item GHOUL_SPAWN_EGG = registerItem("ghoul_spawn_egg", new SpawnEggItem(ModEntities.GHOUL, 0x959595, 0x979797, new FabricItemSettings()));
 
     /* Rarity Levels:
     Common - White; Applies to most items.
@@ -65,11 +80,62 @@ public class ModItems {
     however, exceptions exist (such as player heads, which are Uncommon).
      */
 
-    private static Item registerItem(String name, Item item) {
+    private static void addItemsToIngredientTabItemGroup(FabricItemGroupEntries entries) {
+        entries.add(RUBY);
+        entries.add(RAW_RUBY);
+        entries.add(TOPAZ);
+        entries.add(HEAVY_IRON);
+        entries.add(TIN_INGOT);
+        entries.add(PLATINUM_INGOT);
+        entries.add(BRONZE_INGOT);
+        entries.add(AMETHYST_DUST);
+        entries.add(CITRINE);
+        entries.add(RAW_CITRINE);
+        entries.add(ENDERITE_INGOT);
+        entries.add(RAW_ENDERITE);
+        entries.add(KUNZITE_INGOT);
+        entries.add(RAW_KUNZITE);
+    }
+
+    private static void addItemsToFoodAndDrinkTabItemGroup(FabricItemGroupEntries entries) {
+        entries.add(PINEAPPLE);
+        entries.add(PEPPER);
+        entries.add(CHEESE);
+        entries.add(CRYSTALLIZED_HONEY);
+    }
+
+    private static void addItemsToCombatTabItemGroup(FabricItemGroupEntries entries) {
+        entries.add(RUBY_SWORD);
+        entries.add(RUBY_AXE);
+        entries.add(HEAVY_IRON_SWORD);
+        entries.add(HEAVY_IRON_AXE);
+        entries.add(OBSIDIAN_SWORD);
+        entries.add(OBSIDIAN_AXE);
+        entries.add(HEAVY_IRON_HELMET);
+        entries.add(HEAVY_IRON_CHESTPLATE);
+        entries.add(HEAVY_IRON_LEGGINGS);
+        entries.add(HEAVY_IRON_BOOTS);
+        entries.add(OBSIDIAN_HELMET);
+        entries.add(OBSIDIAN_CHESTPLATE);
+        entries.add(OBSIDIAN_LEGGINGS);
+        entries.add(OBSIDIAN_BOOTS);
+        entries.add(STONY_SNOWBALL);
+    }
+
+    private static void addItemsToSpawnEggsItemGroup(FabricItemGroupEntries entries) {
+        entries.add(GHOUL_SPAWN_EGG);
+    }
+
+        private static Item registerItem(String name, Item item) {
         return Registry.register(Registries.ITEM, new Identifier(TheOnlyModYouWillEverNeed.MOD_ID, name), item);
     }
 
     public static void registerModItems() {
         TheOnlyModYouWillEverNeed.LOGGER.info("Registering Mod Items for " + TheOnlyModYouWillEverNeed.MOD_ID);
+
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register(ModItems::addItemsToIngredientTabItemGroup);
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.FOOD_AND_DRINK).register(ModItems::addItemsToFoodAndDrinkTabItemGroup);
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.COMBAT).register(ModItems::addItemsToCombatTabItemGroup);
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.SPAWN_EGGS).register(ModItems::addItemsToSpawnEggsItemGroup);
     }
 }

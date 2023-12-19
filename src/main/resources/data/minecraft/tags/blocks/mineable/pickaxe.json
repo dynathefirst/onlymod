@@ -12,6 +12,13 @@
     "onlymod:citrine_ore",
     "onlymod:deepslate_citrine_ore",
     "onlymod:citrine_block",
-    "minecraft:reinforced_deepslate"
+    "minecraft:reinforced_deepslate",
+    "onlymod:enderite_ore",
+    "onlymod:ruby_ore",
+    "onlymod:heavy_iron_block",
+    "onlymod:kunzite_ore",
+    "onlymod:marble_block",
+    "onlymod:polished_marble",
+    "onlymod:moon_rock"
   ]
 }

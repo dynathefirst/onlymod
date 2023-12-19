@@ -2,7 +2,7 @@ package net.dyna.onlymod;
 
 import net.dyna.onlymod.block.ModBlocks;
 import net.dyna.onlymod.enchantment.PetrificationEnchantment;
-import net.dyna.onlymod.entity.GhoulEntity;
+import net.dyna.onlymod.entity.custom.GhoulEntity;
 import net.dyna.onlymod.item.ModItemGroups;
 import net.dyna.onlymod.item.ModItems;
 import net.dyna.onlymod.sound.ModSounds;
@@ -16,27 +16,18 @@ import net.fabricmc.fabric.api.object.builder.v1.entity.FabricDefaultAttributeRe
 import net.fabricmc.fabric.api.registry.FlammableBlockRegistry;
 import net.fabricmc.fabric.api.registry.StrippableBlockRegistry;
 import net.kyrptonaught.customportalapi.api.CustomPortalBuilder;
-import net.minecraft.block.BlockState;
-import net.minecraft.block.Blocks;
 import net.minecraft.enchantment.Enchantment;
-import net.minecraft.entity.EntityType;
 import net.minecraft.item.Items;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.registry.RegistryKey;
 import net.minecraft.registry.RegistryKeys;
-import net.minecraft.registry.entry.RegistryEntry;
 import net.minecraft.util.Identifier;
-import net.minecraft.util.math.intprovider.ConstantIntProvider;
 import net.minecraft.world.World;
 import net.minecraft.world.dimension.DimensionOptions;
 import net.minecraft.world.dimension.DimensionType;
 import net.minecraft.world.gen.GenerationStep;
 import net.minecraft.world.gen.feature.*;
-import net.minecraft.world.gen.feature.size.TwoLayersFeatureSize;
-import net.minecraft.world.gen.foliage.BlobFoliagePlacer;
-import net.minecraft.world.gen.stateprovider.BlockStateProvider;
-import net.minecraft.world.gen.trunk.StraightTrunkPlacer;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -95,6 +86,6 @@ public class TheOnlyModYouWillEverNeed implements ModInitializer {
 				.tintColor(164, 164, 164)
 				.registerPortal();
 
-		FabricDefaultAttributeRegistry.register(GHOUL, GhoulEntity.createMobAttributes());
+		FabricDefaultAttributeRegistry.register(GHOUL, GhoulEntity.createGhoulAttributes());
 	}
 }

@@ -11,7 +11,8 @@ public enum ModToolMaterial implements ToolMaterial {
     ICICLE(MiningLevels.HAND, 45, 3.5f, 4f, -1, () -> Ingredient.ofItems(Items.ICE)),
     MACE(ICICLE.miningLevel, 1060, 1.0f, 7.7f, 1, () -> Ingredient.ofItems(Items.IRON_INGOT)),
     RUBY(3, 2061, 1.5F, 4.5F, 15, () -> Ingredient.ofItems(ModItems.RUBY)),
-    HEAVY_IRON(5, 1500, 8.0F, 3.0F, 10, () -> Ingredient.ofItems(ModItems.HEAVY_IRON));
+    HEAVY_IRON(5, 1500, 8.0F, 3.0F, 10, () -> Ingredient.ofItems(ModItems.HEAVY_IRON)),
+    OBSIDIAN(10, 80, 2.7f, 3f, 1000, () -> Ingredient.ofItems(Items.OBSIDIAN));
 
     private final int miningLevel;
     private final int itemDurability;

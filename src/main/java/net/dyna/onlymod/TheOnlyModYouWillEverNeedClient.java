@@ -1,13 +1,14 @@
 package net.dyna.onlymod;
 
 import net.dyna.onlymod.block.ModBlocks;
-import net.dyna.onlymod.client.renderer.GhoulEntityRenderer;
 import net.dyna.onlymod.entity.ModEntities;
+import net.dyna.onlymod.entity.client.GhoulModel;
+import net.dyna.onlymod.entity.client.GhoulRenderer;
+import net.dyna.onlymod.entity.client.ModModelLayers;
 import net.fabricmc.api.ClientModInitializer;
 import net.fabricmc.fabric.api.blockrenderlayer.v1.BlockRenderLayerMap;
 import net.fabricmc.fabric.api.client.rendering.v1.EntityModelLayerRegistry;
 import net.fabricmc.fabric.api.client.rendering.v1.EntityRendererRegistry;
-import net.minecraft.client.item.ModelPredicateProviderRegistry;
 import net.minecraft.client.render.RenderLayer;
 import net.minecraft.client.render.entity.FlyingItemEntityRenderer;
 import net.minecraft.client.render.entity.model.EntityModelLayer;
@@ -30,10 +31,7 @@ public class TheOnlyModYouWillEverNeedClient implements ClientModInitializer {
         EntityRendererRegistry.register(ModEntities.NO_BOOM_DYNAMITE, FlyingItemEntityRenderer::new);
         EntityRendererRegistry.register(ModEntities.STONY_SNOWBALL, FlyingItemEntityRenderer::new);
 
-        EntityRendererRegistry.register(ModEntities.GHOUL, (context) -> {
-            return new GhoulEntityRenderer(context);
-        });
-
-        EntityModelLayerRegistry.registerModelLayer(MODEL_GHOUL_LAYER, GhoulEntityRenderer::getTexturedModelData);
+        EntityRendererRegistry.register(ModEntities.GHOUL, GhoulRenderer::new);
+        EntityModelLayerRegistry.registerModelLayer(ModModelLayers.GHOUL, GhoulModel::getTexturedModelData);
     }
 }

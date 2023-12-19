@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "onlymod:heavy_iron_block"
+    }
+  ],
+  "result": {
+    "item": "onlymod:heavy_iron",
+    "count": 9
+  }
+}
