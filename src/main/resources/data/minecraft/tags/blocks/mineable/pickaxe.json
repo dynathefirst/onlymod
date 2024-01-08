@@ -19,6 +19,8 @@
     "onlymod:kunzite_ore",
     "onlymod:marble_block",
     "onlymod:polished_marble",
-    "onlymod:moon_rock"
+    "onlymod:moon_rock",
+    "onlymod:cement",
+    "onlymod:nether_coal_ore"
   ]
 }

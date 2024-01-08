@@ -13,7 +13,7 @@
     "sources": "https://github.com/dynathefirst/onlymod",
     "issues": "https://github.com/dynathefirst/onlymod"
   },
-  "license": "CC-BY-NC-ND-4.0",
+  "license": "MIT",
   "icon": "assets/onlymod/icon.png",
   "environment": "*",
   "entrypoints": {

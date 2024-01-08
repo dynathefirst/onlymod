@@ -1,10 +1,7 @@
 package net.dyna.onlymod.entity;
 
 import net.dyna.onlymod.TheOnlyModYouWillEverNeed;
-import net.dyna.onlymod.entity.custom.DynamiteEntity;
-import net.dyna.onlymod.entity.custom.GhoulEntity;
-import net.dyna.onlymod.entity.custom.NoBoomDynamiteEntity;
-import net.dyna.onlymod.entity.custom.StonySnowballEntity;
+import net.dyna.onlymod.entity.custom.*;
 import net.fabricmc.fabric.api.object.builder.v1.entity.FabricEntityTypeBuilder;
 import net.minecraft.entity.EntityDimensions;
 import net.minecraft.entity.EntityType;

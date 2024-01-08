@@ -1,7 +1,7 @@
 package net.dyna.onlymod.block;
 
-import net.dyna.onlymod.block.custom.IcicleBlock;
-import net.dyna.onlymod.block.custom.PepperCropBlock;
+import net.dyna.onlymod.block.custom.*;
+import net.dyna.onlymod.block.entity.ModBlockEntities;
 import net.dyna.onlymod.block.torch.ExtinguishedTorchBlock;
 import net.dyna.onlymod.block.torch.ExtinguishedWallTorchBlock;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
@@ -10,6 +10,8 @@ import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.dyna.onlymod.TheOnlyModYouWillEverNeed;
 import net.minecraft.block.*;
+import net.minecraft.block.entity.BlockEntityType;
+import net.minecraft.block.enums.Instrument;
 import net.minecraft.block.piston.PistonBehavior;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
@@ -71,6 +73,12 @@ public class ModBlocks {
     public static final Block MARBLE_BLOCK = registerBlock("marble_block", new Block(FabricBlockSettings.copyOf(Blocks.STONE).mapColor(MapColor.WHITE).requiresTool()));
     public static final Block POLISHED_MARBLE = registerBlock("polished_marble", new Block(FabricBlockSettings.copyOf(Blocks.STONE).mapColor(MapColor.WHITE).requiresTool()));
     public static final Block MOON_ROCK = registerBlock("moon_rock", new Block(FabricBlockSettings.copyOf(Blocks.STONE).requiresTool()));
+    public static final Block FREEZER = registerBlock("freezer", new FreezerBlock(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK)));
+    public static final Block CEMENT = registerBlock("cement", new Block(FabricBlockSettings.copyOf(Blocks.STONE).hardness(2.0F).requiresTool()));
+    public static final Block STONE_SPONGE = registerBlock("stone_sponge", new StoneSpongeBlock(AbstractBlock.Settings.create().mapColor(MapColor.GRAY).strength(0.6f).sounds(BlockSoundGroup.STONE)));
+    public static final Block SANDY_FARMLAND = registerBlock("sandy_farmland", new SandyFarmlandBlock(AbstractBlock.Settings.create().mapColor(MapColor.PALE_YELLOW).ticksRandomly().strength(0.6f).sounds(BlockSoundGroup.GRAVEL)));
+    public static final Block NETHER_COAL_ORE = registerBlock("nether_coal_ore", new ExperienceDroppingBlock(AbstractBlock.Settings.create().mapColor(MapColor.RED).instrument(Instrument.BASEDRUM).requiresTool().strength(3.0f, 3.0f), UniformIntProvider.create(0, 2)));
+    public static final Block COMPANION_CUBE = registerBlock("companion_cube", new CompanionCubeBlock(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK)));
 
     private static void addBlocksToBuildingBlocksTabItemGroup(FabricItemGroupEntries entries) {
         entries.add(DIRT_SLAB);
@@ -96,6 +104,11 @@ public class ModBlocks {
         entries.add(SOMEWHAT_COMPRESSED_ANDESITE);
         entries.add(CHEESE_BLOCK);
         entries.add(CUT_OBSIDIAN);
+        entries.add(MARBLE_BLOCK);
+        entries.add(POLISHED_MARBLE);
+        entries.add(MOON_ROCK);
+        entries.add(CEMENT);
+        entries.add(FREEZER);
     }
 
     private static void addBlocksToColoredBlocksTabItemGroup(FabricItemGroupEntries entries) {

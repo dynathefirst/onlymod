@@ -16,6 +16,8 @@ import net.minecraft.entity.damage.DamageSource;
 import net.minecraft.entity.data.DataTracker;
 import net.minecraft.entity.data.TrackedData;
 import net.minecraft.entity.data.TrackedDataHandlerRegistry;
+import net.minecraft.entity.effect.StatusEffectInstance;
+import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.entity.mob.*;
 import net.minecraft.entity.passive.*;
 import net.minecraft.entity.player.PlayerEntity;
@@ -114,6 +116,10 @@ public class GhoulEntity extends HostileEntity {
         return super.getXpToDrop();
     }
 
+    public static boolean canSpawn(EntityType<HuskEntity> type, ServerWorldAccess world, SpawnReason spawnReason, BlockPos pos, Random random) {
+        return canSpawnInDark(type, world, spawnReason, pos, random) && (spawnReason == SpawnReason.SPAWNER || world.isSkyVisible(pos));
+    }
+
     @Override
     public void tickMovement() {
         if (this.isAlive()) {
@@ -146,11 +152,9 @@ public class GhoulEntity extends HostileEntity {
     @Override
     public boolean tryAttack(Entity target) {
         boolean bl = super.tryAttack(target);
-        if (bl) {
+        if (bl && this.getMainHandStack().isEmpty() && target instanceof LivingEntity) {
             float f = this.getWorld().getLocalDifficulty(this.getBlockPos()).getLocalDifficulty();
-            if (this.getMainHandStack().isEmpty() && this.isOnFire() && this.random.nextFloat() < f * 0.3f) {
-                target.setOnFireFor(2 * (int)f);
-            }
+            ((LivingEntity)target).addStatusEffect(new StatusEffectInstance(StatusEffects.INVISIBILITY, 140 * (int)f), this);
         }
         return bl;
     }

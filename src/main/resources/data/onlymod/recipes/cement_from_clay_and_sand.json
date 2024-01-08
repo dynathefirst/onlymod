@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "#S ",
+    "S# ",
+    "   "
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:clay"
+    },
+    "S": {
+      "item": "minecraft:sand"
+    }
+  },
+  "result": {
+    "item": "onlymod:cement",
+    "count": 4
+  }
+}

@@ -59,6 +59,29 @@ public class ModItemGroups {
                         entries.add(ModBlocks.KUNZITE_ORE);
                         entries.add(ModItems.RAW_KUNZITE);
                         entries.add(ModItems.KUNZITE_INGOT);
+                        entries.add(ModItems.COPPER_SWORD);
+                        entries.add(ModItems.COPPER_SHOVEL);
+                        entries.add(ModItems.COPPER_PICKAXE);
+                        entries.add(ModItems.COPPER_AXE);
+                        entries.add(ModItems.COPPER_HOE);
+                        /*
+                        entries.add(ModItems.COPPER_HELMET);
+                        entries.add(ModItems.COPPER_CHESTPLATE);
+                        entries.add(ModItems.COPPER_LEGGINGS);
+                        entries.add(ModItems.COPPER_BOOTS);
+                        */
+                        entries.add(ModBlocks.NETHER_COAL_ORE);
+                        entries.add(ModItems.LEVITATION_SWORD);
+                        entries.add(ModItems.HEALTH_SWORD);
+                        entries.add(ModItems.STONE_CLUB);
+                        entries.add(ModItems.MAKESHIFT_STONE_AXE);
+
+                        entries.add(ModItems.ARMARLA_HELMET);
+                        entries.add(ModItems.ARMARLA_CHESTPLATE);
+                        entries.add(ModItems.ARMARLA_LEGGINGS);
+                        entries.add(ModItems.ARMARLA_BOOTS);
+
+                        entries.add(ModItems.SANDSTONE_HOE);
 
                         entries.add(ModItems.COPPER_NUGGET);
 
@@ -70,17 +93,32 @@ public class ModItemGroups {
                         entries.add(ModItems.CHEESE);
                         entries.add(ModBlocks.CHEESE_BLOCK);
                         entries.add(ModItems.CRYSTALLIZED_HONEY);
+                        entries.add(ModItems.BAGEL);
+                        entries.add(ModItems.GOLDEN_BAGEL);
+                        entries.add(ModItems.EXOTIC_BUTTER);
+                        entries.add(ModItems.BAT_WING);
+                        entries.add(ModItems.WOLF_MEAT);
+                        entries.add(ModItems.COOKED_WOLF_MEAT);
+                        entries.add(ModItems.FLOUR);
+                        entries.add(ModItems.DONUT);
 
+                        entries.add(ModItems.PEBBLE);
                         entries.add(ModItems.STONE_CHUNK);
                         entries.add(ModItems.STONY_SNOWBALL);
                         entries.add(ModItems.CAVE_DETECTOR);
                         entries.add(ModItems.LUCKY_CLOVER);
+
                         entries.add(ModItems.DYNAMITE);
                         entries.add(ModItems.NO_BOOM_DYNAMITE);
+
                         entries.add(ModItems.CREEPER_ESSENCE);
                         entries.add(ModItems.AMETHYST_DUST);
                         entries.add(ModItems.NETHERITE_NUGGET);
                         entries.add(ModItems.NETHERITE_MELON_SLICE);
+
+                        entries.add(ModItems.BASKET);
+                        entries.add(ModItems.BASKET_OF_EXOTIC_BUTTERS);
+                        entries.add(ModItems.ROPE);
 
                         entries.add(ModBlocks.EXTINGUISHED_TORCH);
                         entries.add(ModBlocks.EXTINGUISHED_WALL_TORCH);
@@ -118,8 +156,15 @@ public class ModItemGroups {
                         entries.add(ModBlocks.RUBBLE);
                         entries.add(ModBlocks.MARBLE_BLOCK);
                         entries.add(ModBlocks.POLISHED_MARBLE);
+                        entries.add(ModBlocks.CEMENT);
+
+                        entries.add(ModBlocks.STONE_SPONGE);
+
+                        entries.add(ModBlocks.FREEZER);
 
                         entries.add(ModBlocks.MOON_ROCK);
+
+                        entries.add(ModBlocks.COMPANION_CUBE);
 
                         entries.add(ModBlocks.BAOBAB_LOG);
                         entries.add(ModBlocks.BAOBAB_WOOD);
@@ -135,7 +180,6 @@ public class ModItemGroups {
 
                         entries.add(ModItems.GHOUL_SPAWN_EGG);
                     }).build());
-
 
     public static void registerItemGroups() {
         TheOnlyModYouWillEverNeed.LOGGER.info("Registering Item Groups for " + TheOnlyModYouWillEverNeed.MOD_ID);

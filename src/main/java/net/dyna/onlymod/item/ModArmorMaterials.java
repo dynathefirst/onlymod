@@ -15,8 +15,8 @@ public enum ModArmorMaterials implements ArmorMaterial {
             SoundEvents.ITEM_ARMOR_EQUIP_IRON, 2f, 0.0f, () -> Ingredient.ofItems(ModItems.HEAVY_IRON)),
     OBSIDIAN("obsidian", 6, new int[] { 5, 10, 8, 5 }, 20,
             SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND, 4f, 0.1f, () -> Ingredient.ofItems(Items.OBSIDIAN)),
-    FINAL_IGNORE("n/a", 0, new int[] { 0, 0, 0, 0 }, 0,
-            SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND, 0f, 0.0f, () -> Ingredient.ofItems(Items.AIR));
+    ARMARLA("armarla", 33, new int[] { 4, 9, 7, 4 }, 30,
+            SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND, 1f, 0.0f, () -> Ingredient.ofItems(Items.GRAVEL));
 
     private final String name;
     private final int durabilityMultiplier;

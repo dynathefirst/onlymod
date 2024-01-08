@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "item": "minecraft:iron_ingot"
+    },
+    "1": {
+      "item": "minecraft:golden_apple"
+    }
+  },
+  "pattern": [
+    "###",
+    "#1#",
+    "###"
+  ],
+  "result": {
+    "count": 1,
+    "item": "onlymod:companion_cube"
+  },
+  "show_notification": true
+}

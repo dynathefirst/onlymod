@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "item": "onlymod:exotic_butter"
+    },
+    "1": {
+      "item": "onlymod:basket"
+    }
+  },
+  "pattern": [
+    "#",
+    "1"
+  ],
+  "result": {
+    "count": 1,
+    "item": "onlymod:basket_of_exotic_butters"
+  },
+  "show_notification": true
+}

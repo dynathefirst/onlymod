@@ -1,10 +1,12 @@
 package net.dyna.onlymod;
 
 import net.dyna.onlymod.block.ModBlocks;
+import net.dyna.onlymod.block.entity.ModBlockEntities;
 import net.dyna.onlymod.enchantment.PetrificationEnchantment;
 import net.dyna.onlymod.entity.custom.GhoulEntity;
 import net.dyna.onlymod.item.ModItemGroups;
 import net.dyna.onlymod.item.ModItems;
+import net.dyna.onlymod.screen.ModScreenHandlers;
 import net.dyna.onlymod.sound.ModSounds;
 import net.dyna.onlymod.util.ModCustomTrades;
 import net.dyna.onlymod.villager.ModVillagers;
@@ -56,6 +58,8 @@ public class TheOnlyModYouWillEverNeed implements ModInitializer {
 		ModSounds.registerSounds();
 		ModVillagers.registerVillagers();
 		ModCustomTrades.registerCustomTrades();
+        ModBlockEntities.registerBlockEntities();
+		ModScreenHandlers.registerScreenHandlers();
 
 		Registry.register(Registries.ENCHANTMENT, new Identifier("onlymod", "petrification"), PETRIFICATION);
 

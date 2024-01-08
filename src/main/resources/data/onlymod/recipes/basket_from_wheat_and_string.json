@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "item": "minecraft:wheat"
+    },
+    "1": {
+      "item": "minecraft:string"
+    }
+  },
+  "pattern": [
+    "# #",
+    "#1#",
+    " # "
+  ],
+  "result": {
+    "count": 4,
+    "item": "onlymod:basket"
+  },
+  "show_notification": true
+}

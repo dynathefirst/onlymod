@@ -1,0 +1,26 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:wooden_pickaxe"
+    },
+    "title": {
+      "translate": "advancement.timetomine"
+    },
+    "description": {
+      "translate": "advancement.timetomine.desc"
+    }
+  },
+  "parent": "minecraft:adventure/root",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "tag": "minecraft:pickaxes"
+          }
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:wooden_hoe"
+    },
+    "title": {
+      "translate": "advancement.farmtime"
+    },
+    "description": {
+      "translate": "advancement.farmtime.desc"
+    }
+  },
+  "parent": "minecraft:adventure/root",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "tag": "minecraft:hoes"
+          }
+        ]
+      }
+    }
+  }
+}
